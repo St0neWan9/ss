@@ -8077,7 +8077,7 @@ for (var i = 0; i < rules.length; i++) {
 
 function FindProxyForURL(url, host) {
   if (defaultMatcher.matchesAny(url, host) instanceof BlockingFilter) {
-    return '127.0.0.1:63148';
+    return 'PROXY 127.0.0.1:63148';
   }
   return direct;
 }
